@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var transform = require('../')()
+var transform = require('../')
   , fs = require('fs')
 
 if (process.argv[2]) {

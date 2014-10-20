@@ -5,7 +5,7 @@ test('Replaces getImageWidth("...") with image width', function(t) {
   var buffer = ''
   var stream = imgify()
 
-  stream()
+  stream
     .on('data', function(d) { buffer += d })
     .on('end', function() {
       t.notEqual(-1, buffer.indexOf('var imgWidthFoo = 800'))
@@ -24,7 +24,7 @@ test('Replaces getImageHeight("...") with image height', function(t) {
   var buffer = ''
   var stream = imgify()
 
-  stream()
+  stream
     .on('data', function(d) { buffer += d })
     .on('end', function() {
       t.notEqual(-1, buffer.indexOf('var imgHeightFoo = 600'))
@@ -43,7 +43,7 @@ test('Replaces getImageDimensions("...") with image dimensions', function(t) {
   var buffer = ''
   var stream = imgify()
 
-  stream()
+  stream
     .on('data', function(d) { buffer += d })
     .on('end', function() {
       t.notEqual(-1, buffer.indexOf('var imgDimensionsFoo = {"width":800,"height":600'))
