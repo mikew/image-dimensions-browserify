@@ -1,6 +1,6 @@
 {
   "name": "image-dimensions-browserify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Repalce `getImageWidth`, `getImageHeight`, `getImageDimensions` with actual image sizes.",
   "main": "index.js",
   "scripts": {
